@@ -1,0 +1,6 @@
+<svg width="600" height="800" viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="800" fill="#F9F6F1"/>
+  <circle cx="300" cy="260" r="120" fill="#D6B26C"/>
+  <path d="M140 760C140 650 215 560 300 560C385 560 460 650 460 760V800H140V760Z" fill="#5E1A24"/>
+  <text x="300" y="740" text-anchor="middle" font-family="Playfair Display, serif" font-size="32" fill="#F9F6F1">Owner Portrait</text>
+</svg>

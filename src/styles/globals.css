@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ivory font-sans text-zinc-900;
+}
+
+img {
+  @apply max-w-full;
+}
+
+.page-hero {
+  @apply relative overflow-hidden bg-ivory py-16 md:py-24;
+}
+
+.section-title {
+  @apply font-serif text-3xl font-semibold text-maroon md:text-4xl;
+}
+
+.section-subtitle {
+  @apply mt-3 max-w-2xl text-base text-zinc-600 md:text-lg;
+}
+
+.glass-card {
+  @apply rounded-3xl border border-white/60 bg-white/70 shadow-soft backdrop-blur;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full border border-maroon/20 bg-white px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-maroon;
+}
+
+.input-field {
+  @apply w-full rounded-2xl border border-zinc-200 bg-white px-4 py-3 text-sm focus:border-maroon focus:outline-none focus:ring-2 focus:ring-maroon/30;
+}
+
+.nav-link {
+  @apply text-sm font-medium uppercase tracking-[0.2em] text-zinc-700 transition hover:text-maroon;
+}
+
+.primary-btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-maroon px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-soft transition hover:bg-emerald;
+}
+
+.secondary-btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-maroon/30 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-maroon transition hover:border-maroon hover:bg-maroon hover:text-white;
+}
+
+.focus-ring:focus-visible,
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #5e1a24;
+  outline-offset: 2px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
