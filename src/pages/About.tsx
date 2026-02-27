@@ -13,7 +13,7 @@ const About = () => {
         />
         <meta
           name="keywords"
-          content="Shubham Showroom story, premium ethnic wear boutique, designer sarees"
+          content="Shubham Showroom story, premium ethnic wear boutique, designer menswear"
         />
         <meta property="og:title" content="About Shubham Showroom" />
         <meta
@@ -146,8 +146,8 @@ const About = () => {
               His approach blends traditional values with modern business
               practices, delivering a shopping experience that is both
               personalized and professional. Mehul&apos;s vision is to make
-              designer ethnic wear accessible and to help every woman feel
-              confident and beautiful in traditional attire.
+              designer ethnic wear accessible and to help every man feel
+              confident and sharp in traditional attire.
             </p>
             <a
               href={siteContent.ownerInstagramUrl}

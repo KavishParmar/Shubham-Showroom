@@ -10,8 +10,8 @@ const Testimonials = () => {
         <p className="badge">Testimonials</p>
         <h2 className="section-title mt-4">Loved by Our Clients</h2>
         <p className="section-subtitle">
-          Every outfit is styled with care. Hear from women who found their
-          dream ensembles at Shubham Showroom.
+          Every outfit is styled with care. Hear from clients who found their
+          perfect looks at Shubham Showroom.
         </p>
         <div className="mt-10">
           <Swiper

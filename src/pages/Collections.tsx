@@ -1,11 +1,26 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import ProductCard from "../components/ProductCard";
 import { categories, products } from "../utils/products";
 import { Helmet } from "react-helmet-async";
 import Reveal from "../components/Reveal";
+import { useSearchParams } from "react-router-dom";
 
 const Collections = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialCategory = searchParams.get("category") || "All";
+  const [activeCategory, setActiveCategory] = useState(categories.includes(initialCategory) ? initialCategory : "All");
+
+  useEffect(() => {
+    const categoryFromUrl = searchParams.get("category") || "All";
+    if (categories.includes(categoryFromUrl)) {
+      setActiveCategory(categoryFromUrl);
+    }
+  }, [searchParams]);
+
+  const handleCategoryChange = (category: string) => {
+    setActiveCategory(category);
+    setSearchParams({ category });
+  };
 
   const filteredProducts = useMemo(() => {
     if (activeCategory === "All") return products;
@@ -15,14 +30,14 @@ const Collections = () => {
   return (
     <>
       <Helmet>
-        <title>Collections | Shubham Showroom</title>
+        <title>Buy Designer Menswear Online | {activeCategory !== "All" ? activeCategory : "Collections"} | Shubham Showroom</title>
         <meta
           name="description"
-          content="Browse kurta sets, sherwanis, Indo-Western, wedding and festive menswear collections curated by Shubham Showroom."
+          content={`Explore and buy premium ${activeCategory !== "All" ? activeCategory : "menswear"} online. Browse our curated collection of kurta pajamas, sherwanis, and luxury ethnic wear at Shubham Showroom.`}
         />
         <meta
           name="keywords"
-          content="designer menswear, sherwani, kurta sets, indo-western, wedding outfits, festive wear"
+          content={`${activeCategory}, buy menswear online, designer kurta, luxury sherwani, indian wedding wear`}
         />
         <meta property="og:title" content="Collections - Shubham Showroom" />
         <meta
@@ -92,12 +107,11 @@ const Collections = () => {
               <button
                 key={category}
                 type="button"
-                onClick={() => setActiveCategory(category)}
-                className={`rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition ${
-                  activeCategory === category
-                    ? "bg-maroon text-white"
-                    : "border border-maroon/20 text-maroon hover:border-maroon"
-                }`}
+                onClick={() => handleCategoryChange(category)}
+                className={`rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition ${activeCategory === category
+                  ? "bg-maroon text-white"
+                  : "border border-maroon/20 text-maroon hover:border-maroon"
+                  }`}
               >
                 {category}
               </button>

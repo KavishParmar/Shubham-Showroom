@@ -9,12 +9,12 @@ export const siteContent = {
     "Curated designer menswear with personalized styling and heritage craftsmanship.",
   instagramUrl: "https://www.instagram.com/shubham_showroom/",
   ownerInstagramUrl: "https://www.instagram.com/mehul.shubham/",
-  whatsapp: "919009014111",
-  phoneDisplay: "+91 90090 14111",
-  phoneLink: "+919009014111",
+  whatsapp: "917042816202",
+  phoneDisplay: "+91 70428 16202",
+  phoneLink: "+917042816202",
   address: "Mahalaxmi nagar, behind new bus stand, Rajgarh, Madhya Pradesh",
   hours: "10:00 AM - 8:00 PM (All days)",
-  whatsappMessage: "Hi, I'm interested in your collection at Shubham Showroom.",
+  whatsappMessage: "Hi, I'm interested in your menswear collection at Shubham Showroom.",
   navLinks: [
     { label: "Home", path: "/" },
     { label: "Collections", path: "/collections" },
@@ -48,62 +48,62 @@ export const heroSlides = [
 
 export const featuredCollections = [
   {
-    title: "Kurta Sets",
-    description: "Festive kurta pajama sets in premium fabrics.",
-    image: "/images/products/post-4.jpg"
+    title: "Kurta Pajama",
+    description: "Traditional sets with modern tailoring.",
+    image: "https://images.unsplash.com/photo-1583316174775-bd6dc0e9f298?auto=format&fit=crop&q=80&w=400"
   },
   {
-    title: "Sherwani",
-    description: "Wedding-ready sherwanis with rich embroidery.",
-    image: "/images/products/post-5.jpg"
+    title: "Shirts",
+    description: "Premium cotton and designer shirts for every occasion.",
+    image: "https://images.unsplash.com/photo-1621072156002-e2fccedfe5d7?auto=format&fit=crop&q=80&w=400"
   },
   {
-    title: "Jodhpuri",
-    description: "Tailored Jodhpuri sets for royal occasions.",
-    image: "/images/products/post-6.jpg"
+    title: "Pants",
+    description: "Perfectly tailored pants and trousers.",
+    image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    title: "Coats",
+    description: "Structured coats and blazers for formal flair.",
+    image: "https://images.unsplash.com/photo-1591337673702-e29ad18bc9c2?auto=format&fit=crop&q=80&w=400"
+  },
+  {
+    title: "Shaadi Wear",
+    description: "Complete menswear styling for grand weddings.",
+    image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&q=80&w=400"
   },
   {
     title: "Indo-Western",
-    description: "Fusion silhouettes for cocktail and festive evenings.",
-    image: "/images/products/post-7.jpg"
-  },
-  {
-    title: "Wedding Collection",
-    description: "Complete menswear styling for wedding functions.",
-    image: "/images/products/post-8.jpg"
-  },
-  {
-    title: "Party Wear",
-    description: "Bold outfits for celebrations and events.",
-    image: "/images/products/post-9.jpg"
+    description: "Fusion outfits for modern celebrations.",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=400"
   }
 ];
 
 export const testimonials = [
   {
-    name: "Aarohi Jain",
+    name: "Aryan Sharma",
     quote:
-      "The styling guidance was on point. My wedding outfit felt premium and tailored."
+      "The styling guidance was on point. My wedding sherwani felt premium and perfectly tailored."
   },
   {
-    name: "Meera Kapoor",
+    name: "Vikram Malhotra",
     quote:
-      "Premium fabrics and immaculate detailing. The kurta set was a show-stopper."
+      "Premium fabrics and immaculate detailing. The kurta set I bought was the talk of the event."
   },
   {
-    name: "Nandini Rao",
+    name: "Rahul Khanna",
     quote:
-      "A perfect blend of tradition and modern menswear. Highly recommend their styling service."
+      "A perfect blend of tradition and modern menswear. Highly recommend their personalized service."
   },
   {
-    name: "Ritika Sharma",
+    name: "Siddharth Verma",
     quote:
-      "Indo-western options were elegant, comfortable, and beautifully curated."
+      "The Indo-western options were elegant and comfortable. Great range for cocktail nights."
   },
   {
-    name: "Priya Choudhary",
+    name: "Kabir Singh",
     quote:
-      "Personalized attention and a curated collection made shopping seamless."
+      "Personalized attention and a curated collection made my wedding shopping seamless."
   }
 ];
 
