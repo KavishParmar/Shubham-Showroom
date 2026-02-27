@@ -1,5 +1,3 @@
-import { productPosts } from "./instagramData";
-
 export type Product = {
   id: string;
   name: string;
